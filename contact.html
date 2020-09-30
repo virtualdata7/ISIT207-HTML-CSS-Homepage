@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Virgo Airline</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!--contact.html is sharing the same css with intro.html and about.html. The main designs are the same.-->
+	<header style="padding-top:20px;" id="topPart">
+		<div style="width:8%; height:100px; float:left;">
+			<a href="intro.html"><img src="image/flight_logo_head.jpg" alt="Logo" style="width:130px; height: 70px; margin-top: 10px; margin-left: 10px;">
+		</div>
+		<div style="width:67%; height:100px; float:left;">
+			<h4 class="header" style="text-align: left; margin-top: 8px; font-family: Times New Roman; color: #87BDB7; font-size: 30px;">Virgo Airline ───────<br />
+			<span style="text-align: center; font-family: Times New Roman; font-size: 18px; color: grey;">All the way to the sweetest vacation!</span></h3>
+		</div>
+		<div style="width:25%; height:100px; float:left;">
+			<nav style="margin-top:-50px;">
+				<ul class="nav-container">
+					<li class="nav-item"> <a href="intro.html">HOME</a></li>
+					<li class="nav-item"> <a href="about.html">ABOUT US</a></li>
+					<li class="nav-item"> <a href="contact.html">BOOKING</a></li>
+				</ul>
+			</nav>
+		</div>
+	
+	</header>
+	<div>
+		<!--I have put different image for contact.html-->
+		<img src="https://upside.com/wp-content/uploads/2020/05/covid-airline-cancellation-header.png" alt="title img" style="width:100%; height:400px;"/>
+	</div>
+	
+	<br />
+	<br />
+	<br />
+	<br />
+	<section>
+		<!--Once again, I have put tag 'table' to create table. -->
+		<table class ="intro-table" style="width:70%; margin:0px auto 0px auto; background-color: #ffffff; border-collapse: collapse;" border="1">
+			<h1 class="intro_header" style="margin-left: 300px; font-family: Times New Roman; color: #87BDB7; font-size: 50px;">Book now, fly with VIRGO ───────</h1>
+			<!--but this time, contact.html is having different 'div' called 'booking_container'. This 'div' will have 'form'.-->
+			<div id="booking_container">
+				<!--I have put 'autocomplete="off" so when the user click the input box, they will not see any autocompleted information (ID, name, address etc.) saved in the data.-->
+				<form autocomplete="off">
+					<table id="booking_table">
+						<!--Now, this table 'booking_table' is to create the table inside 'form'.-->
+						<caption style="font-size:25px; font-family: Times New Roman; color: #87BDB7;">
+							Please fill in your booking information<br /><br />
+							<!--This caption is used for the table description. -->
+						</caption>
+						<tr>
+							<!--I have give class 'tableLeftlabel' for all paragraphs indicating input fields. So I can easily design it in css.-->
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Name:</p>
+							</td>
+							<!--I have give class 'tableRightInput' for all input fields, which helps me to design right away in css by calling class 'tableRightInput'.-->
+							<td class="tableRightInput">
+								<input type="text" id="username" name="username" placeholder="Please input your name."/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Password: </p>
+							</td>
+							<td class="tableRightInput">
+								<!--Since it's a password input field, input type is 'password' which will not show the input letters. -->
+								<input type="password" id="username" name="username" placeholder="Please input your password" />
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Phone: </p>
+							</td>
+							<td class="tableRightInput">
+								<!--'placeholder' shows the indication for the users inside the input fields. -->
+								<input type="text" id="username" name="username" placeholder="Please input your phone number"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Departure: </p>
+							</td>
+							<td class="tableRightInput">
+								<input type="text" id="username" name="username" placeholder="Please input place of departure"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Destination: </p>
+							</td>
+							<td class="tableRightInput">
+								<input type="text" id="username" name="username" placeholder="Please input place of detination"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Flight Date: </p>
+							</td>
+							<td class="tableRightInput">
+								<!--input type 'date' has been used in here so the user can select the date with calendar-->
+								<input type="date" id="username" name="username"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Flight Time: </p>
+							</td>
+							<td class="tableRightInput">
+								<!--input type 'time' has been used in here so the user can select from the 'time' formatted drop down box.-->
+								<input type="time" id="username" name="username" placeholder="Input your flight time."/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tableLeftLabel">
+								<p style="font-size:15px; font-family: Times New Roman; color: #87BDB7; font-size: 23px;">Number of tickets :</p>
+							</td>
+							<td class="tableRightInput">
+								<input type="number" id="username" name="username" placeholder="Input the number of tickets."/>
+								<!--input type 'number' has been used in here so the user only can put numbers.-->
+							</td>
+						</tr>
+					</table>
+					<p style="text-align: center;">
+						<input type="submit" value="SUBMIT" id="button"/>
+						<!--Since it's in the 'form', I have created 'submit' button instead of an ordinary 'button'-->
+						<button type="button" id="button"><a class="btn" href="intro.html">HOME</a></button>
+						<!--When the user clicks this button named 'HOME', it will bring user to the intro.html.-->
+					</p>
+				</form>
+				<!--END OF FORM-->
+			</div>
+		</table><br />
+	</section>
+	<br />
+	<br />
+	<br />
+	<footer style="width:100%; height:40px; background-color: #AFD1CD; padding-top: 10px;">
+		<p style="color:#245A53; text-align: center; font-family: Times New Roman;"><b>&copy; Copyright | VIRGO AIRLINE | 6193365</b></p>
+
+		<a href="#topPart"><p style="text-align: center;">▲▲▲</p></a> <!-- LOCAL LINK -->
+	</footer>
+	<a href="contact.html" target="_blank"><img style="position: fixed; bottom:0px; right:0px; width:80px; height:180px;" src="image/fixed_tab.png"/></a>
+	<a href="about.html" target="_blank"><img style="position: relative; bottom:500px; left:50px; width:180px; height:300px;" src="image/side_banner.png"/></a>
+	<!--For contact.html, I have used a banner with 'absolute' position from the 'relative' positioned banner. This will located in the upper part of 'relative' banner. -->
+	<a href="about.html" target="_blank"><img style="position: absolute; bottom:0px; left:50px; width:180px; height:300px;" src="image/side_banner2.png"/></a>
+	<a href="https://www.hotels.com" target="_blank"><img style="position: fixed; bottom:180px; right:0px; width:80px; height:180px;" src="image/fixed_tab2.png"/></a>
+</body>
+</html>

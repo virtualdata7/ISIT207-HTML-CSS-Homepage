@@ -1,0 +1,124 @@
+body {
+	margin: 0px;
+
+}
+
+/*This is to design the main menu bar located at the right top. */
+.nav-container {
+	display: flex;
+	flex-direction: low;
+	/*flex-direction is used to set the position of flexible itmes INSIDE the container.*/
+	padding: 0;
+	list-style-type: none;
+	margin-top:60px;
+	width:100%;
+}
+
+/*This is to design the items INSIDE the container. */
+.nav-item {
+	text-align: right;
+	padding: 15px;
+	margin-top : 0px;
+	cursor: pointer;
+}
+
+/*This is to design the words written in the item.*/
+
+.nav-item a {
+	text-align: right;
+	text-decoration: none;
+	color: black;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+
+
+/* This is used to change the color of menu in a default status*/
+
+.nav-item:nth-child(1) {
+	background-color: #AFDDFA;
+}
+
+/* This is used to change the color when the cursor is hovering on the menu. */
+.nav-item:hover {
+	background-color: #AFD1CD;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* This is to design the table with contents (paragraphs)*/
+.intro-table {
+	text-align: center;
+	padding: 10px;
+	margin-top : 5px;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+
+.intro-table{
+	color: #6D8784;
+}
+
+.about-table {
+	text-align: center;
+	padding: 10px;
+	margin-top : 5px;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+
+.about-table{
+	color: #6D8784;
+	border: 1px solid #6D8784;
+}
+
+
+#booking_container {
+	text-align: center;
+
+}
+
+#booking_table {
+	margin: 0px auto 0px auto;
+}
+
+.tableLeftLabel {
+	width: 200px;
+	font-size:20px;
+}
+
+.tableRIghtInput {
+	width: 70%;
+}
+
+
+/* This is using parent-child. I have changed the style of 'input' that belongs to class 'tableRightInput'.*/
+.tableRightInput > input {
+	width: 400px;
+	height: 47px;
+	font-size: 18px;
+	margin:10px;
+}
+
+#button {
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
+
+/*'focus' is used to change the color when the user is clicking 'input' that is located inside the class 'tableRightInput'.*/
+input:focus {
+	background-color: #AFD1CD;
+}
+/*'first-child' is used to change the color of the fisrt paragraph (p) that is INSIDE the article. */
+article p:first-child {
+	color: #74A09B;
+}
+
+/*'last-child' is used to change the color of the last paragraph (p) that is INSIDE the article. */
+article p:last-child {
+	color: #C89EBD;
+}
